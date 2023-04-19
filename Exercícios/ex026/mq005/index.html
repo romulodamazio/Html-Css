@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios Menu Hamburguer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -15,7 +16,8 @@
       <header>
 
         <h1> Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
 <ul>
 <li><a href="#">Opção 1</a></li>
 <li><a href="#">Opção 2 </a></li>
@@ -58,7 +60,28 @@
 
 
 
+    <script>
+
+        function clickMenu() {  
+         if ( itens.styles.display == 'block') {
+            itens.styles.display = 'none'
+         
+        } else { 
+            itens.styles.display = 'block'
+         }
+        }
+        
+
+
+
+
+    </script>
+
+
+
 
     
 </body>
+
+
 </html>
