@@ -30,6 +30,12 @@ Extra large screens, TV – 1201px, and more.*/
     main {
 
         border: 2px solid black;
+        width: 90vw;
+    }
+    main::after{
+        content: "Esse texto só aparece para impressões";
+        text-decoration: overline;
+
     }
 
         img#fone{display: none;}
